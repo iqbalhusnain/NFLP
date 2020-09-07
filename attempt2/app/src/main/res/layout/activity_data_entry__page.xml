@@ -121,6 +121,7 @@
         android:layout_width="122dp"
         android:layout_height="26dp"
         android:layout_marginStart="32dp"
+        android:hint="@string/field_trainer_name"
         app:layout_constraintStart_toEndOf="@+id/fttxt"
         tools:layout_editor_absoluteY="427dp" />
 
@@ -151,14 +152,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="122dp"
         android:layout_height="26dp"
-        android:layout_marginStart="52dp"
-        app:layout_constraintStart_toEndOf="@+id/pitxt"
-        tools:layout_editor_absoluteY="477dp" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="122dp"
-        android:layout_height="26dp"
         android:layout_marginStart="56dp"
+        android:hint="@string/partner_institute"
         app:layout_constraintStart_toEndOf="@+id/pitxt"
         tools:layout_editor_absoluteY="192dp">
 
@@ -168,10 +163,20 @@
         android:layout_width="236dp"
         android:layout_height="88dp"
         android:layout_marginStart="20dp"
+        android:hint="Input Address"
         app:layout_constraintStart_toEndOf="@+id/vtxt"
         tools:layout_editor_absoluteY="242dp">
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="477dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
