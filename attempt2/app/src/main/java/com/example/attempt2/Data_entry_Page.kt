@@ -10,7 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.attempt2.ui.main.SectionsPagerAdapter
 
-class Data_entry_Page : AppCompatActivity() {
+class DataEntryPage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
