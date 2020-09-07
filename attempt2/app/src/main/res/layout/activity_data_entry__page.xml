@@ -1,182 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-
-    android:id="@+id/coordinatorLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/lbtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="92dp"
-        android:text="Lead Bank"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/abtxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.086" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/abtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="142dp"
-        android:text="@string/associate_bank"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/pitxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/pitxt"
-        android:layout_width="135dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="192dp"
-        android:text="@string/partner_institute"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/vtxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:id="@+id/topTitle"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/google_regular"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/title_activity_data_entry__page"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/vtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="242dp"
-        android:text="@string/venue"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/dtxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:id="@+id/leadbank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:text="@string/lead_bank"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/dtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="292dp"
-        android:text="@string/district"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/fttxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.729" />
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-
-        android:layout_width="0dp"
-        android:layout_height="46dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/fttxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="342dp"
-        android:text="@string/field_trainer_name"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/fctxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.765" />
-
-    <TextView
-        android:id="@+id/fctxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/field_trainer_cell"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="477dp" />
-
-    <TextView
-        android:id="@+id/dtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="442dp"
-        android:text="@string/date_of_session"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/sttxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.732" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="122dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="32dp"
-        android:hint="@string/field_trainer_name"
-        app:layout_constraintStart_toEndOf="@+id/fttxt"
-        tools:layout_editor_absoluteY="427dp" />
-
-    <TextView
-        android:id="@+id/ettxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="656dp"
-        android:text="@string/end_time"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-    <TextView
-        android:id="@+id/sttxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="492dp"
-        android:text="@string/start_time"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/ettxt"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.833" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="122dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="56dp"
-        android:hint="@string/partner_institute"
-        app:layout_constraintStart_toEndOf="@+id/pitxt"
-        tools:layout_editor_absoluteY="192dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="236dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="20dp"
-        android:hint="Input Address"
-        app:layout_constraintStart_toEndOf="@+id/vtxt"
-        tools:layout_editor_absoluteY="242dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="175dp"
-        android:layout_height="25dp"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="477dp" />
+            <Spinner
+                android:id="@+id/inputLeadBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/associateBank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/associate_bank"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/inputAssociateBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputAssociateBank"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:textSize="17sp" />-->
+
+            <TextView
+                android:id="@+id/partnerInstitute"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/partner_institute"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputPartnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/district"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/inputDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputDistrict"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:textSize="17sp"/>-->
+
+            <TextView
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/venue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputVenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/fieldTrainerName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/field_trainer_name"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputFieldTrainerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/fieldTrainerCell"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/field_trainer_cell"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputFieldTrainerCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/sessionDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/date_of_session"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/inputDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputDate"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="date"-->
+<!--                android:textSize="17sp"/>-->
+
+            <TextView
+                android:id="@+id/timeStart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/start_time"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TimePicker
+                android:id="@+id/inputTimeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputTimeStart"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="time"-->
+<!--                android:textSize="17sp"/>-->
+
+            <TextView
+                android:id="@+id/timeEnd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/end_time"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TimePicker
+                android:id="@+id/inputTimeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputTimeEnd"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="time"-->
+<!--                android:textSize="17sp"/>-->
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:text="@string/nextButton" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
