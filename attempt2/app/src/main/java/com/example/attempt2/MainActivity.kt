@@ -12,8 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val addsessionbtn = findViewById<Button>(R.id.addsessionbtn)
+
         addsessionbtn.setOnClickListener{
-            val intent = Intent(this,dataentrypage::class.java)
+            val intent = Intent(this, DataEntryPage::class.java)
             startActivity(intent)
         }
 
