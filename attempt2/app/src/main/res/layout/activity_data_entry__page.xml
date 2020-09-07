@@ -1,44 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/coordinatorLayout2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Data_entry_Page">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+        android:id="@+id/coordinatorLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        tools:layout_editor_absoluteX="-60dp"
+        tools:layout_editor_absoluteY="-57dp">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="532dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="484dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="416dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="272dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="232dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="132dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="320dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="176dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="92dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="372dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/appbar"
+            app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="272dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="232dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="132dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="176dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="92dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
