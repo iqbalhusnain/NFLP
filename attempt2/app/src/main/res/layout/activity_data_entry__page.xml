@@ -8,166 +8,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-
-
-        android:id="@+id/coordinatorLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-60dp"
-        tools:layout_editor_absoluteY="-57dp">
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="532dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="484dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="416dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="272dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="232dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="132dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="320dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="176dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appbar"
-
-            android:layout_width="0dp"
-            android:layout_height="46dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="92dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="372dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/appbar"
-            app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/lbtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="272dp"
-        android:text="TextView"
+        android:layout_marginTop="92dp"
+        android:text="Lead Bank"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/abtxt"
         app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar" />
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/abtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="232dp"
-        android:text="TextView"
+        android:layout_marginTop="142dp"
+        android:text="@string/associate_bank"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/pitxt"
         app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar" />
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/pitxt"
+        android:layout_width="135dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="192dp"
+        android:text="@string/partner_institute"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/vtxt"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/vtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="242dp"
+        android:text="@string/venue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dtxt"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="132dp"
-        android:text="TextView"
+        android:layout_marginTop="292dp"
+        android:text="@string/district"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fttxt"
         app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="176dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/appbar"
-        app:layout_constraintTop_toTopOf="@+id/appbar" />
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.729" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -179,14 +83,95 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/fttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="342dp"
+        android:text="@string/field_trainer_name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fctxt"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <TextView
+        android:id="@+id/fctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/field_trainer_cell"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <TextView
+        android:id="@+id/dtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="92dp"
-        android:text="TextView"
+        android:layout_marginTop="442dp"
+        android:text="@string/date_of_session"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sttxt"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/fttxt"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/ettxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="656dp"
+        android:text="@string/end_time"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/appbar"
         app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <TextView
+        android:id="@+id/sttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="492dp"
+        android:text="@string/start_time"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ettxt"
+        app:layout_constraintStart_toStartOf="@+id/appbar"
+        app:layout_constraintTop_toTopOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toEndOf="@+id/pitxt"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toEndOf="@+id/pitxt"
+        tools:layout_editor_absoluteY="192dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="236dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/vtxt"
+        tools:layout_editor_absoluteY="242dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
