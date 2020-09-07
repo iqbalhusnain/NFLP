@@ -16,7 +16,7 @@ class DataEntryPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data_entry__page)
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-        val viewPager: ViewPager = findViewById(R.id.view_pager)
+        val viewPager = findViewById<androidx.viewpager.widget.ViewPager>(R.id.view_pager)
        viewPager.adapter = sectionsPagerAdapter
         //val tabs: TabLayout = findViewById(R.id.tabs)
         //tabs.setupWithViewPager(viewPager)
