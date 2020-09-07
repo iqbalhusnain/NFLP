@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">attempt2</string>
+    <string name="submit22">Submit22</string>
+    <string name="NFLP_DATA">NFLP Data Entry</string>
+    <string name="add_new_session">Add New Session</string>
+    <string name="title_activity_data_entry__page">Data_entry_Page</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>
