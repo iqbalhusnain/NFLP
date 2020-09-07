@@ -25,33 +25,57 @@
     <string name="hint2">hint</string>
     <string name="hint3">hint</string>
     <string-array name="bank_names">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Al Baraka Bank Limited</item>
+        <item>Askari Bank Limited</item>
+        <item>Allied Bank Limited</item>
+        <item>Bank Alfalah Limited</item>
+        <item>Bank Al Habib Limited</item>
+        <item>Bank Islami Pakistan Limited</item>
+        <item>Dubai Islamic Bank Pakistan Limited</item>
+        <item>Faysal Bank Limited</item>
+        <item>First Women Bank Limited</item>
+        <item>Habib Bank Limited</item>
+        <item>Habib Metropolitan Bank Limited</item>
+        <item>JS Bank Limited</item>
+        <item>MCB Bank Limited</item>
+        <item>Meezan Bank Limited</item>
+        <item>National Bank of Pakistan</item>
+        <item>Samba Bank Limited</item>
+        <item>Soneri Bank Limited</item>
+        <item>Standard Chartered Bank (Pakistan) Limited</item>
+        <item>The Bank of Khyber</item>
+        <item>The Bank of Punjab</item>
+        <item>United Bank Limited</item>
     </string-array>
     <string-array name="associate_bank_names">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Al Baraka Bank Limited</item>
+        <item>Askari Bank Limited</item>
+        <item>Allied Bank Limited</item>
+        <item>Bank Alfalah Limited</item>
+        <item>Bank Al Habib Limited</item>
+        <item>Bank Islami Pakistan Limited</item>
+        <item>Dubai Islamic Bank Pakistan Limited</item>
+        <item>Faysal Bank Limited</item>
+        <item>First Women Bank Limited</item>
+        <item>Habib Bank Limited</item>
+        <item>Habib Metropolitan Bank Limited</item>
+        <item>JS Bank Limited</item>
+        <item>MCB Bank Limited</item>
+        <item>Meezan Bank Limited</item>
+        <item>National Bank of Pakistan</item>
+        <item>Samba Bank Limited</item>
+        <item>Soneri Bank Limited</item>
+        <item>Standard Chartered Bank (Pakistan) Limited</item>
+        <item>The Bank of Khyber</item>
+        <item>The Bank of Punjab</item>
+        <item>United Bank Limited</item>
     </string-array>
     <string-array name="district_names">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Faisalabad</item>
+        <item>Jhang</item>
+        <item>Chiniot</item>
+        <item>Sargodha</item>
+        <item>Toba Tek Singh</item>
+        <item>Khushab</item>
     </string-array>
 </resources>
