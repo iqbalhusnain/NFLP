@@ -3,7 +3,7 @@
     <string name="submit22">Submit22</string>
     <string name="NFLP_DATA">NFLP Data Entry</string>
     <string name="add_new_session">Add New Session</string>
-    <string name="title_activity_data_entry__page">Data_entry_Page</string>
+    <string name="title_activity_data_entry__page">Data Entry Page</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="sbp_bsc_fsd_nflp_app">SBP BSC FSD NFLP App</string>
@@ -13,14 +13,45 @@
     <string name="date_of_session">Date of Session</string>
     <string name="district">District</string>
     <string name="hint">hint</string>
-    <string name="field_trainer_cell">Field Trainer Cell</string>
+    <string name="field_trainer_cell">Field Trainer Cell Number</string>
     <string name="textview2">TextView</string>
     <string name="field_trainer_name">Field Trainer Name</string>
     <string name="associate_bank">Associate Bank</string>
     <string name="venue">Venue</string>
     <string name="partner_institute">Partner Institute</string>
     <string name="lead_bank">Lead Bank</string>
+    <string name="nextButton">Next</string>
     <string name="hint1">hint</string>
     <string name="hint2">hint</string>
     <string name="hint3">hint</string>
+    <string-array name="bank_names">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="associate_bank_names">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="district_names">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>
