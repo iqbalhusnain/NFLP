@@ -12,9 +12,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
         <activity
-            android:name=".Data_entry_Page"
-            android:label="@string/title_activity_data_entry__page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        android:name=".DataEntryPage"
+        android:label="@string/title_activity_data_entry__page"
+        android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
