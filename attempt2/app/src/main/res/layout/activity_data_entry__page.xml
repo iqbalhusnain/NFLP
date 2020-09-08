@@ -168,6 +168,24 @@
                 android:textSize="17sp"/>
 
             <TextView
+                android:id="@+id/participantsNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/participantsNumber"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputparticipantsNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="17sp" />
+
+            <TextView
                 android:id="@+id/sessionDate"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
