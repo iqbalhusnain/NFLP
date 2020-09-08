@@ -173,7 +173,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:gravity="center_vertical"
-                android:text="@string/participantsNumber"
+                android:text="No. of Participants"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
