@@ -24,6 +24,7 @@
     <string name="hint1">hint</string>
     <string name="hint2">hint</string>
     <string name="hint3">hint</string>
+    <string name="participantsNumber">Participants Number</string>
     <string-array name="bank_names">
         <item>Al Baraka Bank Limited</item>
         <item>Askari Bank Limited</item>
