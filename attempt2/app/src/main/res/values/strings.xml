@@ -80,4 +80,7 @@
         <item>Toba Tek Singh</item>
         <item>Khushab</item>
     </string-array>
+   <string name="acctype1">Asaan Account</string>
+    <string name="acctype2">Branchless</string>
+    <string name="selected_item">Selected item:</string>
 </resources>
