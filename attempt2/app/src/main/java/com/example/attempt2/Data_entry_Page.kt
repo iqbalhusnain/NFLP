@@ -194,4 +194,3 @@ class DataEntryPage : AppCompatActivity(), OnItemSelectedListener {
 
 
 }
-
