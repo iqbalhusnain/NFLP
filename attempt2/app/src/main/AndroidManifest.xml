@@ -2,26 +2,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.attempt2">
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="SBP BSC FSD NFLP App"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/app_icon"
+        android:label="NFLP"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:requestLegacyExternalStorage="true"
         tools:ignore="ExtraText"
         tools:targetApi="q">
-
+        <activity
+            android:name=".generate_sheet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".participants_area_third"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".participants_area_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".thankyou" />
         <activity
             android:name=".participants_area"
             android:label="Enter Participants Detail"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DataEntryPage"
             android:label="@string/title_activity_data_entry__page"
