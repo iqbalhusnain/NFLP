@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/topTitle"
@@ -37,12 +38,14 @@
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
-            <Spinner
+            <TextView
                 android:id="@+id/inputLeadBank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown" />
+                android:height="50dp"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp" />
 
 
             <TextView
@@ -61,14 +64,6 @@
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/btn_dropdown"
                 android:spinnerMode="dropdown" />
-
-<!--            <EditText-->
-<!--                android:id="@+id/inputAssociateBank"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:ems="10"-->
-<!--                android:inputType="textPersonName"-->
-<!--                android:textSize="17sp" />-->
 
             <TextView
                 android:id="@+id/partnerInstitute"
@@ -105,14 +100,6 @@
                 android:background="@android:drawable/btn_dropdown"
                 android:spinnerMode="dropdown" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/inputDistrict"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:ems="10"-->
-<!--                android:inputType="textPersonName"-->
-<!--                android:textSize="17sp"/>-->
-
             <TextView
                 android:id="@+id/venue"
                 android:layout_width="match_parent"
@@ -129,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/fieldTrainerName"
@@ -147,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/fieldTrainerCell"
@@ -165,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="phone"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/participantsNumber"
@@ -199,16 +186,16 @@
                 android:id="@+id/inputDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:datePickerMode="spinner"
-                android:calendarViewShown="false"/>
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/inputDate"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:ems="10"-->
-<!--                android:inputType="date"-->
-<!--                android:textSize="17sp"/>-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/inputDate"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="date"-->
+            <!--                android:textSize="17sp"/>-->
 
             <TextView
                 android:id="@+id/timeStart"
@@ -224,15 +211,15 @@
                 android:id="@+id/inputTimeStart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:timePickerMode="spinner"/>
+                android:timePickerMode="spinner" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/inputTimeStart"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:ems="10"-->
-<!--                android:inputType="time"-->
-<!--                android:textSize="17sp"/>-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/inputTimeStart"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="time"-->
+            <!--                android:textSize="17sp"/>-->
 
             <TextView
                 android:id="@+id/timeEnd"
@@ -248,15 +235,15 @@
                 android:id="@+id/inputTimeEnd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:timePickerMode="spinner"/>
+                android:timePickerMode="spinner" />
 
-<!--            <EditText-->
-<!--                android:id="@+id/inputTimeEnd"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:ems="10"-->
-<!--                android:inputType="time"-->
-<!--                android:textSize="17sp"/>-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/inputTimeEnd"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="time"-->
+            <!--                android:textSize="17sp"/>-->
 
             <Button
                 android:id="@+id/nextButton"
