@@ -1,0 +1,2611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topTitleParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/google_regular"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/topTitleParticipants"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/notice"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#D16565"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="16sp" />
+
+            <!-- Participant 1 -->
+
+
+            <ToggleButton
+                android:id="@+id/toggle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 31"
+                android:textOn="Participant 31" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage1"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless1"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname1"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 2 -->
+
+            <ToggleButton
+                android:id="@+id/toggle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 32"
+                android:textOn="Participant 32" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage2"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless2"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname2"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 3 -->
+
+            <ToggleButton
+                android:id="@+id/toggle3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 33"
+                android:textOn="Participant 33" />
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage3"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless2"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname3"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+
+            <!-- Participant 4 -->
+
+            <ToggleButton
+                android:id="@+id/toggle4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 34"
+                android:textOn="Participant 34" />
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage4"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless2"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname4"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 5 -->
+
+            <ToggleButton
+                android:id="@+id/toggle5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 35"
+                android:textOn="Participant 35" />
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage5"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless5"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname5"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 6 -->
+
+            <ToggleButton
+                android:id="@+id/toggle6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 36"
+                android:textOn="Participant  36" />
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage6"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless6"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname6"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 7 -->
+
+            <ToggleButton
+                android:id="@+id/toggle7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 37"
+                android:textOn="Participant  37" />
+
+            <TextView
+                android:id="@+id/name7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage7"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless7"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname7"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 8 -->
+
+            <ToggleButton
+                android:id="@+id/toggle8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 38"
+                android:textOn="Participant  38" />
+
+            <TextView
+                android:id="@+id/name8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage8"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless8"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname8"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 9 -->
+
+            <ToggleButton
+                android:id="@+id/toggle9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 39"
+                android:textOn="Participant  39" />
+
+            <TextView
+                android:id="@+id/name9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage9"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless9"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname9"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <!-- Participant 10 -->
+
+            <ToggleButton
+                android:id="@+id/toggle10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff="Participant 40"
+                android:textOn="Participant  40" />
+
+            <TextView
+                android:id="@+id/name10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Participant"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/inputName10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/age10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputage10"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/profession10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Profession"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputprofession10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnic10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CNIC (Without Dashes)"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcnic10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gender10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/inputgender10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/contact10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Contact No."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputcontact10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/address10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Address"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaddress10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccalready10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Already an account holder in any bank?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccalready10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasaccopened10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account opened in current session?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/inputhasaccopened10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/accountype10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Account Type?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/inpuaccountype10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/typebranchless10"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/typebranchless10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:text="Branchless"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/typeAsaan10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Asaan"
+                    android:visibility="gone"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/accnumber10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Account Number"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputaccnumber10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bankname10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Name of Bank where account is opened?"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/inputbankname10"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/branchcode10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Branch Code"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/inputbranchcode10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/submit1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Next"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
